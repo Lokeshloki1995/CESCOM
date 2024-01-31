@@ -1,0 +1,45 @@
+i have copied the file from the desktop so that i need to changed the concept of sending  from repairer to store ....
+this includes chage in the repair transactions and change in the report (DTC Failure -> Abstract Report)
+--- ongoing modification for the  selected dtr to be received from the repair centre by the store keeper ----
+-- the above modification has been completed which means store keeper can receive the dtr's (no need to select all ) 
+
+
+04 DEC 2018 : modified till sending  DESC to MMS and duplicate in user . status : done 
+06 DEC 2018 : updating FailureReplacement in  DashBoard  with AGP and WGP  and ordering according while export to excel .
+ 
+12 DEC 2018 : MISpendingfalurereplacement wgp/agp  has been copy pasted  to this one .including code and .aspx page .
+14 DEC 2018 : Competed displaying failure capacity and invoiced capacity in the dashboard .
+14 DEC 2018 : Completed sending role id  ;
+
+21 DEC 2018 : MIS FAILURE Replacement  Report has been completed . (need to copy paste the  viewmispendingreplacement )
+
+25 FEB 2019 : NEW DTC Commissioning has been hosted in the live .
+
+27 FEB 2019 : Feeder bifurcation .
+
+07 MARCH 2019 : changes in session from nitin . contains parameterized insert and update query .
+
+
+06-MAY-2019  : updated the front end aspx files for the modifications done by padma copy pasted from svn .
+
+21-10-2019 : updated the repairer concept of Testing and  sendig of OM number and Om date to the MMS while doing RV .  .
+
+05-FEB-2020 : Password Encryption has been changed .... (done by pradeep ) ;
+11- Sept -2020 : updated one containing  changes in the mis repairer report  ;
+
+13-JAN-2021 : hosted the station view and station page  .  
+
+15-JAN-2021 : updated the  generate ss plate range form  .
+16-JAN-2021 : fixed the bug in the plate allocation form and hosted  ...
+(external cert had the updated code  ..) 
+
+01- FEB-2021 :  hosted sms template id to live  .
+12-March-2021 :  hosted the cr status bug in mms integration issue .
+
+31 -March -2021 : for report purpose i need to update the code done by shridhar .(this is the base copy ).
+01- April-2021:  hosted the po issue while receiving dtr from repairer  .
+06-April-2021 : changes done while updating the tc master to mms .
+16-April-2021 :  mis reports dtc failure replacement and mis dtc added has been hosted .
+
+04-May-2021 : completed the feeder bifurcation form .
+

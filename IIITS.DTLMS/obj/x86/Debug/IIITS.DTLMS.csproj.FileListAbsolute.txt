@@ -1,0 +1,12 @@
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\IIITS.DTLMS.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\IIITS.DTLMS.pdb
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\AjaxControlToolkit.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\IIITS.DTLMS.BL.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\IIITS.DTLMS.REPORTS.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\IIITS.DAL.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\System.Data.SQLite.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\IIITS.DTLMS.BL.pdb
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\IIITS.DTLMS.REPORTS.pdb
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\bin\IIITS.DAL.pdb
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\obj\x86\Debug\IIITS.DTLMS.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS\obj\x86\Debug\IIITS.DTLMS.pdb

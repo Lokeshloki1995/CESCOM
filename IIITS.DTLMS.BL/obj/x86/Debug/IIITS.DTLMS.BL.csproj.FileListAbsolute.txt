@@ -1,0 +1,9 @@
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x86\Debug\IIITS.DTLMS.BL.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x86\Debug\IIITS.DTLMS.BL.pdb
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x86\Debug\ClosedXML.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x86\Debug\IIITS.DAL.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x86\Debug\System.Data.SQLite.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x86\Debug\DocumentFormat.OpenXml.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x86\Debug\IIITS.DAL.pdb
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\obj\x86\Debug\IIITS.DTLMS.BL.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\obj\x86\Debug\IIITS.DTLMS.BL.pdb

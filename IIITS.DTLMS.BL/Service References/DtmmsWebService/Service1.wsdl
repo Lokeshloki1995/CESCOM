@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.4.123:75/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.4.123:75/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.4.123:75/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://192.168.4.123:75/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://192.168.4.123:75/Service1.svc?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_SaveIndentDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveIndentDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveIndentDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveIndentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveInvoiceDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInvoiceDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveInvoiceDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInvoiceDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SavePseudoIndentDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePseudoIndentDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SavePseudoIndentDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavePseudoIndentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveRVData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveRVData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveRVData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveRVDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertUserDetailsToDTLMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertUserDetailsToDTLMS" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertUserDetailsToDTLMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertUserDetailsToDTLMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateUserDetailsToDTLMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateUserDetailsToDTLMS" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateUserDetailsToDTLMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateUserDetailsToDTLMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ActivateDeactivateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateDeactivateUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ActivateDeactivateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateDeactivateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_changePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:changePassword" />
+  </wsdl:message>
+  <wsdl:message name="IService1_changePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:changePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateTcMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTcMaster" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateTcMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTcMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReturnInvoiceAcknowledgement_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnInvoiceAcknowledgement" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReturnInvoiceAcknowledgement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnInvoiceAcknowledgementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_purchaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:purchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="IService1_purchaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:purchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReceiptOfMaterialPO_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReceiptOfMaterialPO" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReceiptOfMaterialPO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReceiptOfMaterialPOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDTR_Code_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDTR_Code" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDTR_Code_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDTR_CodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ActDeActUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActDeActUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ActDeActUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActDeActUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChangePWD_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePWD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChangePWD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePWDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ApproveRejectActionDtlms_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveRejectActionDtlms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ApproveRejectActionDtlms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveRejectActionDtlmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateReplaceDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReplaceDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateReplaceDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReplaceDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetMMSUserdetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMMSUserdetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetMMSUserdetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMMSUserdetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUsrDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsrDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUsrDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsrDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveTcDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTcDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveTcDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTcDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_saveRepairer_invoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveRepairer_invoice" />
+  </wsdl:message>
+  <wsdl:message name="IService1_saveRepairer_invoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveRepairer_invoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_saveItem_code_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveItem_code" />
+  </wsdl:message>
+  <wsdl:message name="IService1_saveItem_code_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveItem_codeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GenerateInvoiceNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateInvoiceNo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GenerateInvoiceNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateInvoiceNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveNewDtcCommission_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveNewDtcCommission" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveNewDtcCommission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveNewDtcCommissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_get_StoreID_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_StoreID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_get_StoreID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_StoreIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RVItem_code_InputMessage">
+    <wsdl:part name="parameters" element="tns:RVItem_code" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RVItem_code_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RVItem_codeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveDtlmsTackDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDtlmsTackDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveDtlmsTackDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDtlmsTackDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateTcMasterStoreRv_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTcMasterStoreRv" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateTcMasterStoreRv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTcMasterStoreRvResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateItemTcMapping_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateItemTcMapping" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateItemTcMapping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateItemTcMappingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateRepairGatePass_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRepairGatePass" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateRepairGatePass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRepairGatePassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateCrStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateCrStatus" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateCrStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateCrStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLastPricingDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastPricingDate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLastPricingDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastPricingDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTCDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTCDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_get_ItemQty_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_ItemQty" />
+  </wsdl:message>
+  <wsdl:message name="IService1_get_ItemQty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_ItemQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRepairerAutoINvoiceNum_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRepairerAutoINvoiceNum" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRepairerAutoINvoiceNum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRepairerAutoINvoiceNumResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRepairerAutoRVNum_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRepairerAutoRVNum" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRepairerAutoRVNum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRepairerAutoRVNumResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="SaveIndentDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveIndentDetails" message="tns:IService1_SaveIndentDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveIndentDetailsResponse" message="tns:IService1_SaveIndentDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveInvoiceDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveInvoiceDetails" message="tns:IService1_SaveInvoiceDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveInvoiceDetailsResponse" message="tns:IService1_SaveInvoiceDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePseudoIndentDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SavePseudoIndentDetails" message="tns:IService1_SavePseudoIndentDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SavePseudoIndentDetailsResponse" message="tns:IService1_SavePseudoIndentDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveRVData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveRVData" message="tns:IService1_SaveRVData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveRVDataResponse" message="tns:IService1_SaveRVData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertUserDetailsToDTLMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/insertUserDetailsToDTLMS" message="tns:IService1_insertUserDetailsToDTLMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/insertUserDetailsToDTLMSResponse" message="tns:IService1_insertUserDetailsToDTLMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateUserDetailsToDTLMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateUserDetailsToDTLMS" message="tns:IService1_updateUserDetailsToDTLMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateUserDetailsToDTLMSResponse" message="tns:IService1_updateUserDetailsToDTLMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateDeactivateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ActivateDeactivateUser" message="tns:IService1_ActivateDeactivateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ActivateDeactivateUserResponse" message="tns:IService1_ActivateDeactivateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/changePassword" message="tns:IService1_changePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/changePasswordResponse" message="tns:IService1_changePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTcMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateTcMaster" message="tns:IService1_UpdateTcMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateTcMasterResponse" message="tns:IService1_UpdateTcMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInvoiceAcknowledgement">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ReturnInvoiceAcknowledgement" message="tns:IService1_ReturnInvoiceAcknowledgement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ReturnInvoiceAcknowledgementResponse" message="tns:IService1_ReturnInvoiceAcknowledgement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="purchaseOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/purchaseOrder" message="tns:IService1_purchaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/purchaseOrderResponse" message="tns:IService1_purchaseOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiptOfMaterialPO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ReceiptOfMaterialPO" message="tns:IService1_ReceiptOfMaterialPO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ReceiptOfMaterialPOResponse" message="tns:IService1_ReceiptOfMaterialPO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDTR_Code">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDTR_Code" message="tns:IService1_GetDTR_Code_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDTR_CodeResponse" message="tns:IService1_GetDTR_Code_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveUserDetails" message="tns:IService1_SaveUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveUserDetailsResponse" message="tns:IService1_SaveUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActDeActUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ActDeActUser" message="tns:IService1_ActDeActUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ActDeActUserResponse" message="tns:IService1_ActDeActUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePWD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ChangePWD" message="tns:IService1_ChangePWD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ChangePWDResponse" message="tns:IService1_ChangePWD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveRejectActionDtlms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ApproveRejectActionDtlms" message="tns:IService1_ApproveRejectActionDtlms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ApproveRejectActionDtlmsResponse" message="tns:IService1_ApproveRejectActionDtlms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReplaceDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateReplaceDetails" message="tns:IService1_UpdateReplaceDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateReplaceDetailsResponse" message="tns:IService1_UpdateReplaceDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMMSUserdetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetMMSUserdetails" message="tns:IService1_GetMMSUserdetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetMMSUserdetailsResponse" message="tns:IService1_GetMMSUserdetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsrDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUsrDetail" message="tns:IService1_GetUsrDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUsrDetailResponse" message="tns:IService1_GetUsrDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveTcDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveTcDetails" message="tns:IService1_SaveTcDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveTcDetailsResponse" message="tns:IService1_SaveTcDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveRepairer_invoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/saveRepairer_invoice" message="tns:IService1_saveRepairer_invoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/saveRepairer_invoiceResponse" message="tns:IService1_saveRepairer_invoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveItem_code">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/saveItem_code" message="tns:IService1_saveItem_code_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/saveItem_codeResponse" message="tns:IService1_saveItem_code_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateInvoiceNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GenerateInvoiceNo" message="tns:IService1_GenerateInvoiceNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GenerateInvoiceNoResponse" message="tns:IService1_GenerateInvoiceNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveNewDtcCommission">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveNewDtcCommission" message="tns:IService1_SaveNewDtcCommission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveNewDtcCommissionResponse" message="tns:IService1_SaveNewDtcCommission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_StoreID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/get_StoreID" message="tns:IService1_get_StoreID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/get_StoreIDResponse" message="tns:IService1_get_StoreID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RVItem_code">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RVItem_code" message="tns:IService1_RVItem_code_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RVItem_codeResponse" message="tns:IService1_RVItem_code_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDtlmsTackDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveDtlmsTackDetails" message="tns:IService1_SaveDtlmsTackDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveDtlmsTackDetailsResponse" message="tns:IService1_SaveDtlmsTackDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTcMasterStoreRv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateTcMasterStoreRv" message="tns:IService1_UpdateTcMasterStoreRv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateTcMasterStoreRvResponse" message="tns:IService1_UpdateTcMasterStoreRv_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateItemTcMapping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateItemTcMapping" message="tns:IService1_UpdateItemTcMapping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateItemTcMappingResponse" message="tns:IService1_UpdateItemTcMapping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRepairGatePass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateRepairGatePass" message="tns:IService1_UpdateRepairGatePass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateRepairGatePassResponse" message="tns:IService1_UpdateRepairGatePass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCrStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateCrStatus" message="tns:IService1_updateCrStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateCrStatusResponse" message="tns:IService1_updateCrStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPricingDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetLastPricingDate" message="tns:IService1_GetLastPricingDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetLastPricingDateResponse" message="tns:IService1_GetLastPricingDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTCDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTCDetails" message="tns:IService1_GetTCDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTCDetailsResponse" message="tns:IService1_GetTCDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_ItemQty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/get_ItemQty" message="tns:IService1_get_ItemQty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/get_ItemQtyResponse" message="tns:IService1_get_ItemQty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRepairerAutoINvoiceNum">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRepairerAutoINvoiceNum" message="tns:IService1_GetRepairerAutoINvoiceNum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRepairerAutoINvoiceNumResponse" message="tns:IService1_GetRepairerAutoINvoiceNum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRepairerAutoRVNum">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRepairerAutoRVNum" message="tns:IService1_GetRepairerAutoRVNum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRepairerAutoRVNumResponse" message="tns:IService1_GetRepairerAutoRVNum_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveIndentDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveIndentDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInvoiceDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveInvoiceDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePseudoIndentDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/SavePseudoIndentDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRVData">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveRVData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertUserDetailsToDTLMS">
+      <soap:operation soapAction="http://tempuri.org/IService1/insertUserDetailsToDTLMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateUserDetailsToDTLMS">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateUserDetailsToDTLMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateDeactivateUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/ActivateDeactivateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <soap:operation soapAction="http://tempuri.org/IService1/changePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTcMaster">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateTcMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInvoiceAcknowledgement">
+      <soap:operation soapAction="http://tempuri.org/IService1/ReturnInvoiceAcknowledgement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="purchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/IService1/purchaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiptOfMaterialPO">
+      <soap:operation soapAction="http://tempuri.org/IService1/ReceiptOfMaterialPO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDTR_Code">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDTR_Code" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveUserDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActDeActUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/ActDeActUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePWD">
+      <soap:operation soapAction="http://tempuri.org/IService1/ChangePWD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveRejectActionDtlms">
+      <soap:operation soapAction="http://tempuri.org/IService1/ApproveRejectActionDtlms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReplaceDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateReplaceDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMMSUserdetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetMMSUserdetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsrDetail">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUsrDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTcDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveTcDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveRepairer_invoice">
+      <soap:operation soapAction="http://tempuri.org/IService1/saveRepairer_invoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveItem_code">
+      <soap:operation soapAction="http://tempuri.org/IService1/saveItem_code" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateInvoiceNo">
+      <soap:operation soapAction="http://tempuri.org/IService1/GenerateInvoiceNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveNewDtcCommission">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveNewDtcCommission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_StoreID">
+      <soap:operation soapAction="http://tempuri.org/IService1/get_StoreID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RVItem_code">
+      <soap:operation soapAction="http://tempuri.org/IService1/RVItem_code" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDtlmsTackDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveDtlmsTackDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTcMasterStoreRv">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateTcMasterStoreRv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateItemTcMapping">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateItemTcMapping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRepairGatePass">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateRepairGatePass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateCrStatus">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateCrStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPricingDate">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetLastPricingDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTCDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTCDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_ItemQty">
+      <soap:operation soapAction="http://tempuri.org/IService1/get_ItemQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepairerAutoINvoiceNum">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRepairerAutoINvoiceNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepairerAutoRVNum">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRepairerAutoRVNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://192.168.4.123:75/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

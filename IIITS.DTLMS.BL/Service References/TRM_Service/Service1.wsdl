@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.4.25:9990/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.4.25:9990/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.4.25:9990/Service1.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetSanctionedstatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSanctionedstatus" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSanctionedstatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSanctionedstatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAutoreferencetrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAutoreferencetrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAutoreferencetrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAutoreferencetrmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendestimateDetailstoTrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendestimateDetailstoTrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendestimateDetailstoTrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendestimateDetailstoTrmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Applicationdet_InputMessage">
+    <wsdl:part name="parameters" element="tns:Applicationdet" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Applicationdet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApplicationdetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TrmsConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:TrmsConnection" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TrmsConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TrmsConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Savecrcomplete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Savecrcomplete" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Savecrcomplete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavecrcompleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendDTCDetailstoTrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendDTCDetailstoTrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendDTCDetailstoTrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendDTCDetailstoTrmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendFeederDetailstoTrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendFeederDetailstoTrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendFeederDetailstoTrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendFeederDetailstoTrmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendFeederBifercationDetailstoTrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendFeederBifercationDetailstoTrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendFeederBifercationDetailstoTrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendFeederBifercationDetailstoTrmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendStationDetailstoTrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendStationDetailstoTrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendStationDetailstoTrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendStationDetailstoTrmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendupdateFeederDetailstoTrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendupdateFeederDetailstoTrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendupdateFeederDetailstoTrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendupdateFeederDetailstoTrmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendupdateStationDetailstoTrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendupdateStationDetailstoTrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendupdateStationDetailstoTrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendupdateStationDetailstoTrmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendupdateDTCDetailstoTrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendupdateDTCDetailstoTrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendupdateDTCDetailstoTrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendupdateDTCDetailstoTrmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendCapacitytoTrms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendCapacitytoTrms" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SendCapacitytoTrms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendCapacitytoTrmsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetSanctionedstatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSanctionedstatus" message="tns:IService1_GetSanctionedstatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSanctionedstatusResponse" message="tns:IService1_GetSanctionedstatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoreferencetrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAutoreferencetrms" message="tns:IService1_GetAutoreferencetrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAutoreferencetrmsResponse" message="tns:IService1_GetAutoreferencetrms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendestimateDetailstoTrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendestimateDetailstoTrms" message="tns:IService1_SendestimateDetailstoTrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendestimateDetailstoTrmsResponse" message="tns:IService1_SendestimateDetailstoTrms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Applicationdet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Applicationdet" message="tns:IService1_Applicationdet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ApplicationdetResponse" message="tns:IService1_Applicationdet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TrmsConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TrmsConnection" message="tns:IService1_TrmsConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TrmsConnectionResponse" message="tns:IService1_TrmsConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Savecrcomplete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Savecrcomplete" message="tns:IService1_Savecrcomplete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SavecrcompleteResponse" message="tns:IService1_Savecrcomplete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDTCDetailstoTrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendDTCDetailstoTrms" message="tns:IService1_SendDTCDetailstoTrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendDTCDetailstoTrmsResponse" message="tns:IService1_SendDTCDetailstoTrms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendFeederDetailstoTrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendFeederDetailstoTrms" message="tns:IService1_SendFeederDetailstoTrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendFeederDetailstoTrmsResponse" message="tns:IService1_SendFeederDetailstoTrms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendFeederBifercationDetailstoTrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendFeederBifercationDetailstoTrms" message="tns:IService1_SendFeederBifercationDetailstoTrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendFeederBifercationDetailstoTrmsResponse" message="tns:IService1_SendFeederBifercationDetailstoTrms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendStationDetailstoTrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendStationDetailstoTrms" message="tns:IService1_SendStationDetailstoTrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendStationDetailstoTrmsResponse" message="tns:IService1_SendStationDetailstoTrms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendupdateFeederDetailstoTrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendupdateFeederDetailstoTrms" message="tns:IService1_SendupdateFeederDetailstoTrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendupdateFeederDetailstoTrmsResponse" message="tns:IService1_SendupdateFeederDetailstoTrms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendupdateStationDetailstoTrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendupdateStationDetailstoTrms" message="tns:IService1_SendupdateStationDetailstoTrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendupdateStationDetailstoTrmsResponse" message="tns:IService1_SendupdateStationDetailstoTrms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendupdateDTCDetailstoTrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendupdateDTCDetailstoTrms" message="tns:IService1_SendupdateDTCDetailstoTrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendupdateDTCDetailstoTrmsResponse" message="tns:IService1_SendupdateDTCDetailstoTrms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendCapacitytoTrms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SendCapacitytoTrms" message="tns:IService1_SendCapacitytoTrms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendCapacitytoTrmsResponse" message="tns:IService1_SendCapacitytoTrms_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSanctionedstatus">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSanctionedstatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoreferencetrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAutoreferencetrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendestimateDetailstoTrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendestimateDetailstoTrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Applicationdet">
+      <soap:operation soapAction="http://tempuri.org/IService1/Applicationdet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrmsConnection">
+      <soap:operation soapAction="http://tempuri.org/IService1/TrmsConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Savecrcomplete">
+      <soap:operation soapAction="http://tempuri.org/IService1/Savecrcomplete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDTCDetailstoTrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendDTCDetailstoTrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendFeederDetailstoTrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendFeederDetailstoTrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendFeederBifercationDetailstoTrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendFeederBifercationDetailstoTrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendStationDetailstoTrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendStationDetailstoTrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendupdateFeederDetailstoTrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendupdateFeederDetailstoTrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendupdateStationDetailstoTrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendupdateStationDetailstoTrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendupdateDTCDetailstoTrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendupdateDTCDetailstoTrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCapacitytoTrms">
+      <soap:operation soapAction="http://tempuri.org/IService1/SendCapacitytoTrms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://192.168.4.25:9990/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,5 @@
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.REPORTS\bin\x64\Debug\IIITS.DTLMS.REPORTS.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.REPORTS\bin\x64\Debug\IIITS.DTLMS.REPORTS.pdb
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.REPORTS\obj\x64\Debug\IIITS.DTLMS.REPORTS.csprojResolveAssemblyReference.cache
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.REPORTS\obj\x64\Debug\IIITS.DTLMS.REPORTS.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.REPORTS\obj\x64\Debug\IIITS.DTLMS.REPORTS.pdb

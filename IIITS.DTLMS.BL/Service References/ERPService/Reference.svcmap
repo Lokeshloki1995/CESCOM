@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="336e509e-c67c-47cb-80ee-abe663a52ae9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.6.123:2062/ERPService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ERPService.disco" MetadataType="Disco" ID="785e1599-fb7d-4a0c-aa91-43980b7559ef" SourceId="1" SourceUrl="http://192.168.6.123:2062/ERPService.svc?disco" />
+    <MetadataFile FileName="ERPService.wsdl" MetadataType="Wsdl" ID="23ee4449-d064-41d4-a6ff-09802615113c" SourceId="1" SourceUrl="http://192.168.6.123:2062/ERPService.svc?wsdl" />
+    <MetadataFile FileName="ERPService.xsd" MetadataType="Schema" ID="70dcbbc1-1458-4b30-9868-6aa9fe90d834" SourceId="1" SourceUrl="http://192.168.6.123:2062/ERPService.svc?xsd=xsd6" />
+    <MetadataFile FileName="ERPService1.xsd" MetadataType="Schema" ID="66c15b3c-8640-4cdd-a91a-e3abbf2b7d75" SourceId="1" SourceUrl="http://192.168.6.123:2062/ERPService.svc?xsd=xsd5" />
+    <MetadataFile FileName="ERPService2.xsd" MetadataType="Schema" ID="64ca1230-1b05-4690-aca2-6cd201b44f23" SourceId="1" SourceUrl="http://192.168.6.123:2062/ERPService.svc?xsd=xsd4" />
+    <MetadataFile FileName="ERPService3.xsd" MetadataType="Schema" ID="7f10b0a6-35c6-4026-ad53-e5215da7af9a" SourceId="1" SourceUrl="http://192.168.6.123:2062/ERPService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ERPService4.xsd" MetadataType="Schema" ID="2a2279be-e684-428f-ad65-64b785c6e6ac" SourceId="1" SourceUrl="http://192.168.6.123:2062/ERPService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ERPService5.xsd" MetadataType="Schema" ID="56b2a135-a657-4944-8835-793852797b3b" SourceId="1" SourceUrl="http://192.168.6.123:2062/ERPService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ERPService6.xsd" MetadataType="Schema" ID="960f60cd-9511-413d-9a88-385ee57ac0b7" SourceId="1" SourceUrl="http://192.168.6.123:2062/ERPService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

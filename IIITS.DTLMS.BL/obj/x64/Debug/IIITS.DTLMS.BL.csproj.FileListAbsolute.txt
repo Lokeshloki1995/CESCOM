@@ -1,0 +1,10 @@
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x64\Debug\IIITS.DTLMS.BL.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x64\Debug\IIITS.DTLMS.BL.pdb
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x64\Debug\ClosedXML.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x64\Debug\IIITS.DAL.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x64\Debug\DocumentFormat.OpenXml.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\bin\x64\Debug\IIITS.DAL.pdb
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\obj\x64\Debug\IIITS.DTLMS.BL.csprojResolveAssemblyReference.cache
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\obj\x64\Debug\IIITS.DTLMS.BL.dll
+C:\Users\madan.ks\Desktop\CESCEXTERNAL\IIITS.DTLMS.BL\obj\x64\Debug\IIITS.DTLMS.BL.pdb

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetSanctionedstatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EstimateNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="autoreferencenumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="officecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSanctionedstatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSanctionedstatusResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAutoreferencetrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccessCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="officecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAutoreferencetrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAutoreferencetrmsResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendestimateDetailstoTrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccessCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EstimationAutogenerate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EstimateDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TotalWorkOrderCost" type="xs:double" />
+        <xs:element minOccurs="0" name="autoreferencenumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="offcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strLoggedUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Wodesc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendestimateDetailstoTrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendestimateDetailstoTrmsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Applicationdet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="autoreferencenumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApplicationdetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApplicationdetResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TrmsConnection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="applicantrefid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TrmsConnectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TrmsConnectionResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Savecrcomplete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="wocrflag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="trmsno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="wonumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="wodate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="estimatenumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="estimatedate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="indentno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoicenumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="woautorefid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="indentdate" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SavecrcompleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SavecrcompleteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendDTCDetailstoTrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DTCName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DTCCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OffCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Capacity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtccommisiondate" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendDTCDetailstoTrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendDTCDetailstoTrmsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendFeederDetailstoTrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FeederCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederCap" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederMeterCap" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OffCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederST_LocCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederSTId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendFeederDetailstoTrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendFeederDetailstoTrmsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendFeederBifercationDetailstoTrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OldFeederCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NewFeederCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OldDTCCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NewDTCCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendFeederBifercationDetailstoTrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendFeederBifercationDetailstoTrmsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendStationDetailstoTrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StationName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Stc_Cap_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mobile_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EmailID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Entry_Auth" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OffCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendStationDetailstoTrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendStationDetailstoTrmsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendupdateFeederDetailstoTrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FeederCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederCap" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OffCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederSTId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendupdateFeederDetailstoTrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendupdateFeederDetailstoTrmsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendupdateStationDetailstoTrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StationName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Stc_Cap_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mobile_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EmailID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Entry_Auth" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OffCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendupdateStationDetailstoTrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendupdateStationDetailstoTrmsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendupdateDTCDetailstoTrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DTCName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DTCCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FeederCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OffCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Capacity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtccommisiondate" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendupdateDTCDetailstoTrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendupdateDTCDetailstoTrmsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendCapacitytoTrms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Capacity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtccode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendCapacitytoTrmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendCapacitytoTrmsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

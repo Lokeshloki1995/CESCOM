@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6A4A2A4-53DE-43AA-9906-146536C4D762}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IIITS.DTLMS.BL</RootNamespace>
+    <AssemblyName>IIITS.DTLMS.BL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML">
+      <HintPath>..\..\11-01-2019\WEB APPLICATION\IIITS.DTLMS.BL\bin\Release\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IIITS.DAL">
+      <HintPath>..\..\IIITS.DAL\IIITS.DAL\bin\Debug\IIITS.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Renci.SshNet.Async, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Renci.SshNet.Async.1.4.0\lib\net40\Renci.SshNet.Async.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.111.0\lib\net40\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.111.0\lib\net40\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.111.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Approval\clsApproval.cs" />
+    <Compile Include="Approval\clsApprovalPriority.cs" />
+    <Compile Include="Approval\clsAprovalHistory.cs" />
+    <Compile Include="Approval\clsFormValues.cs" />
+    <Compile Include="Approval\clsRoleMapping.cs" />
+    <Compile Include="BasicForms\clsCircle.cs" />
+    <Compile Include="BasicForms\clsDistrict.cs" />
+    <Compile Include="BasicForms\clsDivision.cs" />
+    <Compile Include="BasicForms\clsOmSecMast.cs" />
+    <Compile Include="BasicForms\clsStation.cs" />
+    <Compile Include="BasicForms\clsSubDiv.cs" />
+    <Compile Include="BasicForms\clsTaluk.cs" />
+    <Compile Include="Dashboard\clsLatestUpdates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DTCFailure\clsDeCommissioning.cs" />
+    <Compile Include="DTCFailure\clsFailureEntry.cs" />
+    <Compile Include="Dashboard\clsApkDownload.cs" />
+    <Compile Include="Dashboard\clsContactUs.cs" />
+    <Compile Include="Dashboard\clsDashboard.cs" />
+    <Compile Include="DTCFailure\clsCRReport.cs" />
+    <Compile Include="DTCFailure\clsEnhancement.cs" />
+    <Compile Include="DTCFailure\clsEstimation.cs" />
+    <Compile Include="DTCFailure\clsFailureRepTImeLine.cs" />
+    <Compile Include="DTCFailure\clsIndent.cs" />
+    <Compile Include="DTCFailure\clsInvoice.cs" />
+    <Compile Include="DTCFailure\clsRIApproval.cs" />
+    <Compile Include="DTCFailure\clsWorkOrder.cs" />
+    <Compile Include="DtcMissMatchEntry\clsDtcMissMatchEntry.cs" />
+    <Compile Include="General\clsCommon.cs" />
+    <Compile Include="General\clsCommunication.cs" />
+    <Compile Include="General\clsException.cs" />
+    <Compile Include="General\clsFtp.cs" />
+    <Compile Include="General\clsSFTP.cs" />
+    <Compile Include="General\Constants.cs" />
+    <Compile Include="General\Genaral.cs" />
+    <Compile Include="Internal\clsEnumLevel.cs" />
+    <Compile Include="Internal\clsFieldEnumeration.cs" />
+    <Compile Include="Internal\clsInterDashboard.cs" />
+    <Compile Include="Internal\clsInternalChangePwd.cs" />
+    <Compile Include="Internal\clsInternalUser.cs" />
+    <Compile Include="Internal\clsInternalLogin.cs" />
+    <Compile Include="Internal\clsQCApproval.cs" />
+    <Compile Include="Internal\clsStoreEnumeration.cs" />
+    <Compile Include="Maintainance\clsTcMaintainance.cs" />
+    <Compile Include="MasterForms\clsAgency.cs" />
+    <Compile Include="MasterForms\clsAllocateRange.cs" />
+    <Compile Include="MasterForms\clsChangePwd.cs" />
+    <Compile Include="MasterForms\clsDesignation.cs" />
+    <Compile Include="MasterForms\clsDeviceRegister.cs" />
+    <Compile Include="MasterForms\clsDTCCommision.cs" />
+    <Compile Include="MasterForms\clsDtcDetailsApprove.cs" />
+    <Compile Include="MasterForms\clsDtcMapping.cs" />
+    <Compile Include="MasterForms\clsDtcMaster.cs" />
+    <Compile Include="MasterForms\clsFeederMast.cs" />
+    <Compile Include="MasterForms\clsFeederView.cs" />
+    <Compile Include="MasterForms\clsIncharge.cs" />
+    <Compile Include="MasterForms\clsLogin.cs" />
+    <Compile Include="MasterForms\clsPoMaster.cs" />
+    <Compile Include="MasterForms\clsRole.cs" />
+    <Compile Include="MasterForms\clsStore.cs" />
+    <Compile Include="MasterForms\clsTcMakeMaster.cs" />
+    <Compile Include="MasterForms\clsTcMaster.cs" />
+    <Compile Include="MasterForms\clsTransRepairer.cs" />
+    <Compile Include="MasterForms\clsTransSupplier.cs" />
+    <Compile Include="MasterForms\clsUser.cs" />
+    <Compile Include="MasterForms\clsVendorMaster.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\clsBackEndActivity.cs" />
+    <Compile Include="Query\clsQrywizard.cs" />
+    <Compile Include="Reports\clsReports.cs" />
+    <Compile Include="ScarpEntry\clsScrap.cs" />
+    <Compile Include="Service References\DtmmsWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ERPService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TRM_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="StoreTransfer\clsReceiveTrans.cs" />
+    <Compile Include="StoreTransfer\clsStoreInvoice.cs" />
+    <Compile Include="StoreTransfer\clsStoreIndent.cs" />
+    <Compile Include="TCRepair\clsBillPayment.cs" />
+    <Compile Include="TCRepair\clsDTrRepairActivity.cs" />
+    <Compile Include="TCRepair\clsOilTest.cs" />
+    <Compile Include="TCRepair\clsTCBilling.cs" />
+    <Compile Include="Transaction\clsDTCTracker.cs" />
+    <Compile Include="Transaction\clsDTrAllocation.cs" />
+    <Compile Include="Transaction\clsStockAlert.cs" />
+    <Compile Include="Transaction\clsStockStatus.cs" />
+    <Compile Include="Transaction\clsTcTracker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\DtmmsWebService\Service11.wsdl" />
+    <None Include="Service References\DtmmsWebService\Service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DtmmsWebService\Service16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DtmmsWebService\Service17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DtmmsWebService\Service18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DtmmsWebService\Service19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ERPService\ERPService.wsdl" />
+    <None Include="Service References\ERPService\ERPService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ERPService\ERPService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ERPService\ERPService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ERPService\ERPService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ERPService\ERPService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ERPService\ERPService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ERPService\ERPService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ERPService\IIITS.DTLMS.BL.ERPService.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ERPService\IIITS.DTLMS.BL.ERPService.UserLoginSuccess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TRM_Service\Service1.wsdl" />
+    <None Include="Service References\TRM_Service\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TRM_Service\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TRM_Service\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DtmmsWebService\" />
+    <WCFMetadataStorage Include="Service References\ERPService\" />
+    <WCFMetadataStorage Include="Service References\TRM_Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DtmmsWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DtmmsWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DtmmsWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TRM_Service\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TRM_Service\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TRM_Service\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TRM_Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ERPService\ERPService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ERPService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ERPService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ERPService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DtmmsWebService\Service12.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net40\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net40\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net40\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.111.0\build\net40\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
