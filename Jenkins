@@ -7,7 +7,7 @@ pipeline {
         SOURCE_DIR = "MY_BUILD"
         HOST_PORT = "8085"
         CONTAINER_PORT = "8085"
-        //dotnet = 'C:\\Program Files\\dotnet\\dotnet.exe'  
+        dotnet = 'C:\\Program Files\\dotnet\\dotnet.exe'  
     }
 
     stages {  
@@ -18,5 +18,17 @@ pipeline {
                 }
             }  
         } 
-}
-}
+      
+        stage('Build and Publish') {
+            steps {
+                script {
+                    echo "Current directory: ${env.WORKSPACE}"
+                    echo "dotnet version:"
+                    bat '"%dotnet%" --version'
+                    bat '"%dotnet%" restore'
+                    echo "Building ${JOB_NAME}"
+                    bat '"%dotnet%" build'
+                    bat "\"%dotnet%\" publish -o \"%WORKSPACE%\\%SOURCE_DIR%\\%SOURCE_DIR%.pub\""
+                }
+            }
+        }
