@@ -24,26 +24,21 @@ pipeline {
                 script {
                     echo "Current directory: ${env.WORKSPACE}"
                     echo "dotnet version:"
-                    bat '"%dotnet%" --version'
-                    bat '"%dotnet%" restore'
+                    bat "\"${dotnet}\" --version"
+                    bat "\"${dotnet}\" restore"
                     echo "Building ${JOB_NAME}"
-                    bat '"%dotnet%" build'
-                    bat "\"%dotnet%\" publish -o \"%WORKSPACE%\\%SOURCE_DIR%\\%SOURCE_DIR%.pub\""
+                    bat "\"${dotnet}\" build"
+                    bat "\"${dotnet}\" publish -o \"${WORKSPACE}\\${SOURCE_DIR}\\${SOURCE_DIR}.pub\""
                 }
             }
         }
 
-stage("Release") {
-    steps {
-        script {
-            bat "\"%dotnet%\" build \"C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\cescom_pipeline\\IIITS.DTLMS.sln\\"-p:Configuration=Debug -p:Platform=\"Any CPU\" -p:PublishProfile=\"%WORKSPACE%\\%SOURCE_DIR%\\%SOURCE_DIR%.pub\\\"/p:DeployOnBuild=true /m" }
-        }
-    }
-}
-}
-    }
-        
+        stage("Release") {
+            steps {
+                script {
+                    bat "\"${dotnet}\" build \"C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\cescom_pipeline\\IIITS.DTLMS.sln\" -p:Configuration=Debug -p:Platform=\"Any CPU\" -p:PublishProfile=\"${WORKSPACE}\\${SOURCE_DIR}\\${SOURCE_DIR}.pub\" /p:DeployOnBuild=true /m"
+                }
             }
         }
-}
+    }
 }
