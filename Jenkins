@@ -36,7 +36,7 @@ pipeline {
 stage("Release") {
     steps {
         script {
-            bat "\"%dotnet%\" build \"C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\cescom_pipeline\\IIITS.DTLMS.sln\\" -p:Configuration=Debug -p:Platform=\"Any CPU\" -p:PublishProfile=\"%WORKSPACE%\\%SOURCE_DIR%\\%SOURCE_DIR%.pub\\\" /p:DeployOnBuild=true /m"
+            bat "\"%dotnet%\" build \"C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\cescom_pipeline\\IIITS.DTLMS.sln\\"-p:Configuration=Debug -p:Platform=\"Any CPU\" -p:PublishProfile=\"%WORKSPACE%\\%SOURCE_DIR%\\%SOURCE_DIR%.pub\\\"/p:DeployOnBuild=true /m"
         }
     }
 }
