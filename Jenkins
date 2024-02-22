@@ -17,7 +17,7 @@ stages {
         stage('Checkout') {  
             steps {
                 script {
-                    git credentialsId: 'GIT_LOGIN_CREDENTIALS', url: 'http://gitlab.ideainfinityit.com/test/sample_test.git', branch: 'main'
+                    git credentialsId: 'Git_hub', url: 'https://github.com/Lokeshloki1995/CESCOM.git', branch: 'main'
                 }
             }  
         }
