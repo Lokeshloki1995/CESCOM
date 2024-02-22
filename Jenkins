@@ -4,48 +4,24 @@ pipeline {
     environment {
         JOB_NAME = "${env.JOB_NAME}"
         BUILD_NUMBER = "${env.BUILD_NUMBER}"
-        SOURCE_DIR = "MY_BUILD"
+        SOURCE_DIR = "SAMPLE_TEST"
         HOST_PORT = "8085"
         CONTAINER_PORT = "8085"
-        dotnet = 'C:\\Program Files\\dotnet\\dotnet.exe'  
     }
 
-//Defining the Checkout Stages from Git i.e cloning 
-
-
-stages {  
-        stage('Checkout') {  
+    stages {
+        stage('Build and Publish') {
             steps {
-                script {
-                    git credentialsId: 'Git_hub', url: 'https://github.com/Lokeshloki1995/CESCOM.git', branch: 'main'
-                }
-            }  
-        }
+                bat '''
+                    echo %CD%
+                    dotnet --version
+                    dotnet restore
+                    echo building %JOB_NAME%
+                    dotnet build
+                    dotnet publish -o "%WORKSPACE%\\%SOURCE_DIR%\\%SOURCE_DIR%.pub"
 
-
-//This Stage Helps in Building & Publishing .net Application 
-stage('Build and Publish') {
-            steps {
-                script {
-                    echo "Current directory: ${env.WORKSPACE}"
-                    echo "dotnet version:"
-                    bat '"%dotnet%" --version'
-                    bat '"%dotnet%" restore'
-                    echo "Building ${JOB_NAME}"
-                    bat '"%dotnet%" build'
-                    bat "\"%dotnet%\" publish -o \"%WORKSPACE%\\%SOURCE_DIR%\\%SOURCE_DIR%.pub\""
-                }
+                '''
             }
-
-//This stage in Jenkins pipeline releasing .NET application 
-
-stage("Release") {
-    steps {
-        script {
-            bat "\"%dotnet%\" build \"C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\IIS\\IEMS.DEPOMULTISCAN.API.sln\" -p:Configuration=Debug -p:Platform=\"Any CPU\" -p:PublishProfile=\"%WORKSPACE%\\%SOURCE_DIR%\\%SOURCE_DIR%.pub\\\" /p:DeployOnBuild=true /m"
         }
     }
-}
-}
-}
 }
