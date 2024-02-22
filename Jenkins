@@ -4,24 +4,18 @@ pipeline {
     environment {
         JOB_NAME = "${env.JOB_NAME}"
         BUILD_NUMBER = "${env.BUILD_NUMBER}"
-        SOURCE_DIR = "SAMPLE_TEST"
+        SOURCE_DIR = "MY_BUILD"
         HOST_PORT = "8085"
         CONTAINER_PORT = "8085"
+        //dotnet = 'C:\\Program Files\\dotnet\\dotnet.exe'  
     }
 
-    stages {
-        stage('Build and Publish') {
+    stages {  
+        stage('Checkout') {  
             steps {
-                bat '''
-                    echo %CD%
-                    dotnet --version
-                    dotnet restore
-                    echo building %JOB_NAME%
-                    dotnet build
-                    dotnet publish -o "%WORKSPACE%\\%SOURCE_DIR%\\%SOURCE_DIR%.pub"
+                script {
+                    git credentialsId: 'Git_hub', url: 'https://github.com/Lokeshloki1995/CESCOM.git', branch: 'main'
+                }
+            }  
+        } 
 
-                '''
-            }
-        }
-    }
-}
